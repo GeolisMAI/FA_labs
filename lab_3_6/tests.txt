@@ -1,0 +1,21 @@
+Компиляция: gcc function.c main.c -o program.exe
+
+#1
+input: (a + [b * {c - d}])
+output: 1
+
+#2
+input: <([{}]))
+output: 0
+
+#3
+input:  // Пустая строка
+output: 1
+
+#4
+input: Hello, world!
+output: 1
+
+#5
+input: ([{<()>}]
+output: 0

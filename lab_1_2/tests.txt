@@ -1,0 +1,14 @@
+Компиляция: gcc -o program main.c function.c -lm
+
+#1
+input:
+4
+6
+7
+8
+20
+output:
+13
+17
+19
+71

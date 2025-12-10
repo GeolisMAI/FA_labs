@@ -1,0 +1,33 @@
+Компиляция: gcc -o program.exe main.c function.c -lm
+
+#1
+input: 25 -h
+output: 25 50 75 100
+
+#2
+input: 101 -h
+output: No natural number up to 100 is divisible by 101
+
+#3
+input: 17 -p
+output: 17 is simple
+
+#4
+input: 24 -p
+output: 24 is composite
+
+#5
+input: 255 -s
+output: Hexadecimal digits 255: F F
+
+#6
+input: 3 -e
+output: //Таблица 10×3 с числами 1-10 в степенях 1-3
+
+#7
+input: 100 -a
+output: Sum of natural numbers from 1 to 100: 5050
+
+#8
+input: 10 -f
+output: Factorial 10: 3628800

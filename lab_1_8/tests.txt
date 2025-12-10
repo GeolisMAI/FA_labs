@@ -1,0 +1,15 @@
+Компиляция: gcc main.c function.c -o program
+
+#1
+input:
+16
+A
+-FF
+7
+Stop
+output:
+Max absolute number (base 16): -FF
+Base 9: -313
+Base 18: -E3
+Base 27: -9C
+Base 36: -73

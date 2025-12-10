@@ -1,0 +1,25 @@
+Компиляция: gcc main.c function.c -o program -lm
+
+#1
+input: -q 0.0001 1 -5 6
+output: x1 = 3, x2 = 2
+
+#2
+input: -q 0.0001 1 2 5
+output: Complex roots
+
+#3
+input: -m 15 5
+output: 15 is a multiple of 5
+
+#4
+input: -m 17 5
+output: 17 is not a multiple of 5
+
+#5
+input: -t 0.0001 3 4 5
+output: The numbers 3, 4, and 5 can be the sides of a right triangle
+
+#6
+input: -t 0.0001 2 3 4
+output: The numbers 2, 3, and 4 cannot be the sides of a right triangle
