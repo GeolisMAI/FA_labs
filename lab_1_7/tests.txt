@@ -1,0 +1,3 @@
+Компиляция: gcc main.c function.c -o program
+
+Запуск: ./program input.txt output.txt

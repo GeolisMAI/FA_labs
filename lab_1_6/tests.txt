@@ -1,0 +1,2 @@
+Компиляция: gcc main.c function.c methods.c -o program -lm 
+Запуск: ./program <eps>

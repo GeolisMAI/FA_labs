@@ -1,0 +1,2 @@
+Компиляция: cc function.c main.c -o program
+
