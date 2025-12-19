@@ -23,10 +23,15 @@ double calc_integral(const double eps, const double a, const double b, double (*
     double int_n = trapezoid_method(a, b, n, f);
     n *= 2;
     double int_2n = trapezoid_method(a, b, n, f);
-    while (runge_rule(eps, int_2n, int_n)) {
+
+    int max_iterations = 30;
+    int iterations = 0;
+
+    while (runge_rule(eps, int_2n, int_n) && iterations < max_iterations) {
         int_n = int_2n;
         n *= 2;
         int_2n = trapezoid_method(a, b, n, f);
+        iterations++;
     }
     return int_2n;
 }

@@ -24,9 +24,19 @@ double func_b(double x) {
     return exp(-x * x / 2.0);
 }
 
+/*
 double func_c(double x) {
     if (eq(10e-10, x, 1.0)) return 0.0;
     return log(1.0 / (1.0 - x));
+}
+*/
+
+double func_c(double x) {
+    if (1.0 - x < 1e-12) {
+        return 0.0;
+    }
+    double t = 1.0 - x;
+    return log(1.0 / t);
 }
 
 double func_d(double x) {
